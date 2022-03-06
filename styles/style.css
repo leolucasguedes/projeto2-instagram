@@ -1,21 +1,35 @@
-body{
-    background-color: white;
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+body{
+    background-color: #FFFFFF;
+}
+
 .topbar1,
 .topbar2{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 54px;
-    border-bottom: 1px solid #DBDBDB;
-    
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;  
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; 
+    z-index: 1;
 }
 
 .topbar2,
-.baseoptions {
+footer {
     display: none;
 }
 
 .mainicon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-left: 210px;
 }
 .separador{
@@ -29,7 +43,6 @@ body{
     height: 29px;
     margin-left: 22.38px;
 }
-
 .searchbar{
     width: 215px;
     height: 28px;
@@ -38,34 +51,29 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 214px;
-    margin-right: 214px;
+    margin-left: 10px;
 }
-.searchbar p{
+.searchbar::placeholder{
     font-size: 12px;
     color: #979797;
     font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 0em;
     text-align: center;
     line-height: 14px;
     box-Align: Center;
     vertical-align: Center;
 }
-
 ion-icon {
     font-size: 20px;
     color: black;
     margin-left: 15px;
   }
-
   ion-icon:hover,
   ion-icon:focus {
       cursor: pointer;
   }
   .icons{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 146px;
@@ -73,14 +81,14 @@ ion-icon {
     margin-right: 370px;
 }
 
-  .maincontent{
+  main{
       display: flex;
   }
 
-  .storiebar{
+  nav{
       width: 614px;
       height: 118px;
-      margin-top: 34px;
+      margin-top: 88px;
       margin-left: 215px;
       display: flex;
       justify-content: space-around;
@@ -90,11 +98,9 @@ ion-icon {
       overflow: hidden;
       position: relative;
   }
-  .storiebar .stories:nth-child(1){
+  nav .stories:nth-child(1){
     margin-left: 60px;
 }
-
-
 .stories {
     display: flex;
     flex-direction: column;
@@ -110,9 +116,7 @@ ion-icon {
       height: 56px;
       border-radius: 50%;
   }
-
   .stories p{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -131,7 +135,6 @@ ion-icon {
     overflow: hidden;
     text-overflow: clip;
 }
-
   .storieimage{
     width: 66px;
     height: 66px;
@@ -144,7 +147,6 @@ ion-icon {
     border-radius: 33px;
     text-overflow: ellipsis;
   }
-
   .button {
     position: absolute;
     left: 570px;
@@ -154,12 +156,13 @@ ion-icon {
     color: rgba(255, 255, 255, 0.92);
     filter: drop-shadow(-3px 2px 4px rgba(100, 100, 100, 1));
 }
+
   .content{
       width: 612px;
+      height: 749px;
       margin-left: 216px;
       margin-top: 24px;
       margin-bottom: 60px;
-      height: 749px;
       border: 1px solid #DBDBDB;
 
   }
@@ -212,14 +215,12 @@ ion-icon {
 }
 .lefticons ion-icon{
     font-size: 22px;
-
 }
 .postinfo{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-left: 10px;
-    
 }
 .postinfo img{
     width: 20px;
@@ -230,7 +231,6 @@ ion-icon {
 
 }
 .postinfo p {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -240,11 +240,8 @@ ion-icon {
     color:  #000000;
     box-Align: Left;
     vertical-align: Center;
-
 }
-
 .postinfo p strong {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -259,7 +256,6 @@ ion-icon {
 .bookmark{
     margin-right: 15px;
 }
-
 
 .post2{
     width: 612px;
@@ -276,12 +272,11 @@ ion-icon {
     border: 1px solid #DBDBDB;
 }
 
-  .sidebar{
+  aside{
       width: 293px;
-      margin-top: 34px;
+      margin-top: 88px;
       margin-left: 30px;
       height: 749px;
-
   }
   .myprofile {
     display: flex;
@@ -289,16 +284,13 @@ ion-icon {
     align-items: center;
     margin-top: 23px;   
 }
-
 .myprofile img {
     width: 56px;
     height: 56px;
     margin-right: 17px;
     border-radius: 28px;
 }
-
 .myprofile p:nth-child(1) {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500 ;
@@ -309,10 +301,7 @@ ion-icon {
     box-Align: Left;
     vertical-align: Center;
 }
-
 .profileinfo p:nth-child(2) {
-
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -324,22 +313,17 @@ ion-icon {
     vertical-align: Center;
 }
 
-
-.sugestoes-box {
+.suggestion-box {
     width: 100%;
     margin-top: 24px;
 }
-
 .suggestions {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 17px;
 }
-
-
 .suggestions p:nth-child(1) {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -350,10 +334,7 @@ ion-icon {
     box-Align: Left;
     vertical-align: Center;
 }
-
 .suggestions p:nth-child(2) {
-
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -365,20 +346,17 @@ ion-icon {
     box-Align: Right;
     vertical-align: Center;
 }
-
 .suggested-profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
 }
-
 .suggested-profile .profiles {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-
 .suggested-profile .profiles img {
     width: 32px;
     height: 32px;
@@ -386,10 +364,7 @@ ion-icon {
     border-radius: 16px;
 }
 
-
-
 .user p:nth-child(1) {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -401,9 +376,7 @@ ion-icon {
     box-Align: Left;
     vertical-align: Center;
 }
-
 .user p:nth-child(2) {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -416,8 +389,6 @@ ion-icon {
 }
 
 .suggested-profile > p {
-
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -434,9 +405,7 @@ ion-icon {
 .copyright {
     margin-top: 33px;
 }
-
 .copyright p {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 11px;
     font-style: normal;
     font-weight: 400;

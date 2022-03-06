@@ -1,28 +1,21 @@
 @media (max-width: 935px) {
 
-    .maincontent{
-
+    section{
         display: flex;
         flex-direction: column;
         align-items: center;
-
-    }
-
-    .sidebar {
-        position: relative;
-        display: none;
-    }
-
-    .center{
+        margin-left: 0px;
         margin-right: 0px;
         transform: translateX(0px);
     }
 
-    .topbar1,
-    .topbar2 {
-        width: calc( 100vw - 58px);
-        padding-left: 29px;
-        padding-right: 29px;
+    .aside {
+        display: none;
+    }
+
+    footer,
+    .topbar2{
+        display: none;
     }
 
 }
