@@ -1,23 +1,24 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
     background-color: #FFFFFF;
 }
 
 .topbar1,
-.topbar2{
+.topbar2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 54px;
     background-color: #FFFFFF;
-    border-bottom: 1px solid #DBDBDB;  
+    border-bottom: 1px solid #DBDBDB;
     position: fixed;
     top: 0;
     right: 0;
-    left: 0; 
+    left: 0;
     z-index: 1;
 }
 
@@ -26,24 +27,27 @@ footer {
     display: none;
 }
 
-.mainicon{
+.mainicon {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 210px;
 }
-.separador{
+
+.separador {
     height: 22px;
     width: 1px;
     background-color: #DBDBDB;
     margin-left: 11.28px;
 }
-.mainlogo{
+
+.mainlogo {
     width: 103px;
     height: 29px;
     margin-left: 22.38px;
 }
-.searchbar{
+
+.searchbar {
     width: 215px;
     height: 28px;
     border: 1px solid #DBDBDB;
@@ -53,7 +57,8 @@ footer {
     align-items: center;
     margin-left: 10px;
 }
-.searchbar::placeholder{
+
+.searchbar::placeholder {
     font-size: 12px;
     color: #979797;
     font-weight: 400;
@@ -63,16 +68,19 @@ footer {
     box-Align: Center;
     vertical-align: Center;
 }
+
 ion-icon {
     font-size: 20px;
     color: black;
     margin-left: 15px;
-  }
-  ion-icon:hover,
-  ion-icon:focus {
-      cursor: pointer;
-  }
-  .icons{
+}
+
+ion-icon:hover,
+ion-icon:focus {
+    cursor: pointer;
+}
+
+.icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,26 +89,28 @@ ion-icon {
     margin-right: 370px;
 }
 
-  main{
-      display: flex;
-  }
+main {
+    display: flex;
+}
 
-  nav{
-      width: 614px;
-      height: 118px;
-      margin-top: 88px;
-      margin-left: 215px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      border: 1px solid #DBDBDB;
-      border-radius: 3px;
-      overflow: hidden;
-      position: relative;
-  }
-  nav .stories:nth-child(1){
+nav {
+    width: 614px;
+    height: 118px;
+    margin-top: 88px;
+    margin-left: 215px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+nav .stories:nth-child(1) {
     margin-left: 60px;
 }
+
 .stories {
     display: flex;
     flex-direction: column;
@@ -111,12 +121,14 @@ ion-icon {
     height: 80px;
     text-overflow: ellipsis;
 }
-  .stories img{
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-  }
-  .stories p{
+
+.stories img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.stories p {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -130,12 +142,14 @@ ion-icon {
     text-overflow: ellipsis;
     max-width: 100%;
     overflow: hidden;
-  }
-.laststory{
+}
+
+.laststory {
     overflow: hidden;
     text-overflow: clip;
 }
-  .storieimage{
+
+.storieimage {
     width: 66px;
     height: 66px;
     background-image: url(../images/stories_background.jpg);
@@ -146,40 +160,44 @@ ion-icon {
     margin-bottom: 1px;
     border-radius: 33px;
     text-overflow: ellipsis;
-  }
-  .button {
+}
+
+.button {
     position: absolute;
     left: 570px;
 }
+
 .button ion-icon {
     font-size: 26px;
     color: rgba(255, 255, 255, 0.92);
     filter: drop-shadow(-3px 2px 4px rgba(100, 100, 100, 1));
 }
 
-  .content{
-      width: 612px;
-      height: 749px;
-      margin-left: 216px;
-      margin-top: 24px;
-      margin-bottom: 60px;
-      border: 1px solid #DBDBDB;
+.content {
+    width: 612px;
+    height: 749px;
+    margin-left: 216px;
+    margin-top: 24px;
+    margin-bottom: 60px;
+    border: 1px solid #DBDBDB;
 
-  }
+}
 
-  .post1top{
-      display: flex;
-      height: 61px;
-      width: 614px;
-      align-items: center;
-  }
-  .post1top img{
-      width: 32px;
-      height: 32px;
-      border-radius: 16px;
-      margin-left: 17px;
-  }
-  .post1top p{
+.post1top {
+    display: flex;
+    height: 61px;
+    width: 614px;
+    align-items: center;
+}
+
+.post1top img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-left: 17px;
+}
+
+.post1top p {
     margin-left: 15px;
     font-size: 16px;
     font-style: normal;
@@ -192,37 +210,43 @@ ion-icon {
     box-Align: Left;
     vertical-align: Center;
 }
-.post1top ion-icon{ 
+
+.post1top ion-icon {
     margin-left: 450px;
 }
 
-.post1bot{
+.post1bot {
     width: 100%;
     height: 76px;
 }
-.posticons{
+
+.posticons {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 8px;
     margin-bottom: 12px;
 }
-.lefticons{
+
+.lefticons {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: auto;
 }
-.lefticons ion-icon{
+
+.lefticons ion-icon {
     font-size: 22px;
 }
-.postinfo{
+
+.postinfo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-left: 10px;
 }
-.postinfo img{
+
+.postinfo img {
     width: 20px;
     height: 20px;
     border-radius: 10px;
@@ -230,6 +254,7 @@ ion-icon {
     margin-left: 7px;
 
 }
+
 .postinfo p {
     font-size: 14px;
     font-style: normal;
@@ -237,10 +262,11 @@ ion-icon {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    color:  #000000;
+    color: #000000;
     box-Align: Left;
     vertical-align: Center;
 }
+
 .postinfo p strong {
     font-size: 14px;
     font-style: normal;
@@ -249,15 +275,16 @@ ion-icon {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    color:  black;  
+    color: black;
     box-Align: Left;
     vertical-align: Center;
 }
-.bookmark{
+
+.bookmark {
     margin-right: 15px;
 }
 
-.post2{
+.post2 {
     width: 612px;
     height: 749px;
     margin-top: 60px;
@@ -265,35 +292,38 @@ ion-icon {
 }
 
 
-.post3{
+.post3 {
     width: 612px;
     height: 749px;
     margin-top: 60px;
     border: 1px solid #DBDBDB;
 }
 
-  aside{
-      width: 293px;
-      margin-top: 88px;
-      margin-left: 30px;
-      height: 749px;
-  }
-  .myprofile {
+aside {
+    width: 293px;
+    margin-top: 88px;
+    margin-left: 30px;
+    height: 749px;
+}
+
+.myprofile {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 23px;   
+    margin-top: 23px;
 }
+
 .myprofile img {
     width: 56px;
     height: 56px;
     margin-right: 17px;
     border-radius: 28px;
 }
+
 .myprofile p:nth-child(1) {
     font-size: 14px;
     font-style: normal;
-    font-weight: 500 ;
+    font-weight: 500;
     font-weight: bold;
     line-height: 16px;
     letter-spacing: 0em;
@@ -301,6 +331,7 @@ ion-icon {
     box-Align: Left;
     vertical-align: Center;
 }
+
 .profileinfo p:nth-child(2) {
     font-size: 14px;
     font-style: normal;
@@ -317,12 +348,14 @@ ion-icon {
     width: 100%;
     margin-top: 24px;
 }
+
 .suggestions {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 17px;
 }
+
 .suggestions p:nth-child(1) {
     font-size: 12px;
     font-style: normal;
@@ -334,6 +367,7 @@ ion-icon {
     box-Align: Left;
     vertical-align: Center;
 }
+
 .suggestions p:nth-child(2) {
     font-size: 12px;
     font-style: normal;
@@ -346,17 +380,20 @@ ion-icon {
     box-Align: Right;
     vertical-align: Center;
 }
+
 .suggested-profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
 }
+
 .suggested-profile .profiles {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+
 .suggested-profile .profiles img {
     width: 32px;
     height: 32px;
@@ -376,6 +413,7 @@ ion-icon {
     box-Align: Left;
     vertical-align: Center;
 }
+
 .user p:nth-child(2) {
     font-size: 12px;
     font-style: normal;
@@ -388,7 +426,7 @@ ion-icon {
     vertical-align: Center;
 }
 
-.suggested-profile > p {
+.suggested-profile>p {
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -405,6 +443,7 @@ ion-icon {
 .copyright {
     margin-top: 33px;
 }
+
 .copyright p {
     font-size: 11px;
     font-style: normal;
@@ -418,5 +457,3 @@ ion-icon {
     margin-bottom: 18px;
 
 }
- 
-  

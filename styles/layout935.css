@@ -1,6 +1,6 @@
 @media (max-width: 935px) {
 
-    section{
+    section {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -14,7 +14,7 @@
     }
 
     footer,
-    .topbar2{
+    .topbar2 {
         display: none;
     }
 
